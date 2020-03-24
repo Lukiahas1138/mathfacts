@@ -1,0 +1,20 @@
+#mathdiv {
+    width:200px;
+}
+
+.full {
+    width:100%;
+    text-align: center;
+}
+
+#progbox{
+    font-size: x-small;
+}
+
+#maxnumbox{
+    width: 50px;
+}
+
+#questionbox{
+    font-size: x-large;
+}

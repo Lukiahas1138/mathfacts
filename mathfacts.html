@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>MathFacts Test</title>
+
+        <link rel="stylesheet" href="css/mathfacts.css">
+    </head>
+    <body>
+        <center>
+            <div id="mathdiv">
+                
+                <p id="progbox">Q x of y</p>
+                
+                <div class="full" id="questionbox">This is something else...</div>
+                <p>
+                    <progress class="full" id="prog" max="100" value="100"> </progress>
+                    <br /> 
+                    <input class="full" type="text" id="answerbox" autofocus="true"></input>
+                </p>
+                <div class="full">Score: <span id="scorebox">0</span></div>
+                <input id="resetbutton" type="button" value="New Game" />
+                <div class="full">High Score: <span id="highscorebox">0</span></div>
+                <br>
+                <div>
+                    Settings:
+                    <br>+ <input id="addcheck" type="checkbox" checked/> - <input id="subcheck" type="checkbox"  checked="true"/> * <input id="multicheck" type="checkbox" checked="true"/> / <input id="divcheck" type="checkbox"/> 
+                    <br>Allow Neg <input id="allownegcheck" type="checkbox" />
+                    <br>Max number <input id="maxnumbox" width="50" type="number" />
+                </div>
+                
+            </div>
+        </center>
+        <script src="js/mathfacts.js"></script>
+    </body>
+</html> 
