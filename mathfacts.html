@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>MathFacts Test</title>
+	<head>
+		<meta charset="utf-8">
+		<title>MathFacts Test</title>
 
-        <link rel="stylesheet" href="css/mathfacts.css">
-    </head>
-    <body>
-        <center>
-	    <div id="hsdiv" style="display:none">
-		    New high score! Way to go!
+		<link rel="stylesheet" href="css/mathfacts.css">
+	</head>
+	<body>
+		<center>
+		<div id="hsdiv" style="display:none">
+			New high score! Way to go!
 
-	    </div>
-            <div id="mathdiv">
-                
-                <p id="progbox">Q x of y</p>
-                
-                <div class="full" id="questionbox">This is something else...</div>
-                <p>
-                    <progress class="full" id="prog" max="100" value="100"> </progress>
-                    <br /> 
-                    <input class="full" type="text" id="answerbox" autofocus="true"></input>
-                </p>
-                <div class="full">Score: <span id="scorebox">0</span></div>
-                <input id="resetbutton" type="button" value="New Game" />
-                <div class="full">High Score: <span id="highscorebox">0</span></div>
-                <br>
-                <div id="settingsdiv">
-                    Settings:
-                    <br>+ <input id="addcheck" type="checkbox" checked/> - <input id="subcheck" type="checkbox"  checked="true"/> * <input id="multicheck" type="checkbox" checked="true"/> / <input id="divcheck" type="checkbox"/> 
-                    <br>Allow Neg <input id="allownegcheck" type="checkbox" />
-                    <br>Max number <input id="maxnumbox" width="50" type="number" />
-                </div>
-                
-            </div>
-        </center>
-        <script src="js/mathfacts.js"></script>
-    </body>
+			</div>
+			<div id="mathdiv">
+				<p id="progbox">Q x of y</p>
+				<div class="full" id="questionbox">This is something else...</div>
+				<p>
+					<progress class="full" id="prog" max="100" value="100"> </progress>
+					<br /> 
+					<input class="full" type="text" id="answerbox" autofocus="true"></input>
+				</p>
+				<div class="full">Score: <span id="scorebox">0</span></div>
+				<input id="resetbutton" type="button" value="New Game" />
+				<div class="full">High Score: <span id="highscorebox">0</span></div>
+				<br>
+				Settings:<span id="settingshide">˅</span>
+				<div id="settingsdiv" style="display:none">
+					<br>+ <input id="addcheck" type="checkbox" value="+" checked /> - <input id="subcheck" type="checkbox" value="-" checked/> * <input id="multicheck" type="checkbox" value="*" checked/> / <input id="divcheck" type="checkbox" value="/" /> 
+					<br>Allow Neg <input id="allownegcheck" type="checkbox" value="allowneg" />
+					<br>Max number <input id="maxnumbox" class="numbox" width="50" type="number" value="12" />
+					<br>Number of Qs <input id="qnumbox" class="numbox" width="50" type="number" value="20" />
+				</div>
+			</div>
+		</center>
+		<script src="js/mathfacts.js"></script>
+	</body>
 </html> 

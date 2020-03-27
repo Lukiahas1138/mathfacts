@@ -1,32 +1,41 @@
 #mathdiv {
-    width:200px;
+	width: 200px;
 }
 
 .full {
-    width:100%;
-    text-align: center;
+	width: 100%;
+	text-align: center;
 }
 
-#progbox{
-    font-size: x-small;
+#progbox {
+	font-size: x-small;
 }
 
-#maxnumbox{
-    width: 50px;
+#prog{
+	width: 204px;
 }
 
-#questionbox{
-    font-size: x-large;
+.numbox {
+	width: 50px;
 }
 
-#hsdiv{
+#questionbox {
+	font-size: x-large;
+}
+
+#hsdiv {
 	position: absolute;
 	background: #88f;
 	width: 400px;
 	left: 50%;
 	margin-left: -200px;
+	top: 40%;
 	border: medium solid #0f0;
 	border-radius: 5px;
-	font-color: #f00;
+	color: #f00;
 	font-size: x-large;
+}
+
+#settingshide{
+	cursor: pointer;
 }
