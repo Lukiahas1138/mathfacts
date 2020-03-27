@@ -18,3 +18,15 @@
 #questionbox{
     font-size: x-large;
 }
+
+#hsdiv{
+	position: absolute;
+	background: #88f;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+	border: medium solid #0f0;
+	border-radius: 5px;
+	font-color: #f00;
+	font-size: x-large;
+}

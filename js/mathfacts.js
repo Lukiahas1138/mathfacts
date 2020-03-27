@@ -11,11 +11,13 @@ var divcheck = document.getElementById("divcheck")
 var allownegcheck = document.getElementById("allownegcheck");
 var resetbutton = document.getElementById("resetbutton");
 var maxnumbox = document.getElementById("maxnumbox");
+var settingsdiv = document.getElementById("settingsdiv");
+var hsdiv = document.getElementById("hsdiv");
 maxnumbox.value = 12;
 var timeperq = 15 * 1000; //ms
 var refreshinterval = 50; //ms
 var allowneganswers = false; 
-var numberofq = 20;
+var numberofq = 5;
 var successmessages =  ["You did it!", 
                         "Correct!", 
                         "Nice one!", 
@@ -50,7 +52,7 @@ function newQuestion(){
     if(questioncount === numberofq){
         clearTimeout(newqtimeout);
         progStop();
-        questionbox.innerHTML = "End of game! Good job!";
+        questionbox.innerHTML = "Game over!";
         highscoreSet();
         return;
     }else{
@@ -94,12 +96,23 @@ function highscoreSet(){
     var currhs = highscoreGet();
     if (currscore > currhs){
         currhs = currscore;
-        alert("New high score! Way to go!");
+	showHsDiv();	
+        //alert("New high score! Way to go!");
         localStorage.setItem("highscore", currhs);
         
     }
     hsbox.innerHTML = currhs
     
+}
+
+function showHsDiv(){
+	hsdiv.style.display = "";
+	setTimeout(() => {
+		hsdiv.style.display = "none";
+        }, 2.5 * 1000);
+
+
+
 }
 
 function highscoreReset(){
